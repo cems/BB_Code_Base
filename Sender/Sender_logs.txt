@@ -1,0 +1,138 @@
+SESSION : Building host01 1
+ 
+SESSION : Building Hello for session 1
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Timeout going to send data on socket => 3 size => 17
+ 
+SESSION : Packet not sent size 17. 
+ 
+SESSION : Building host01 1
+ 
+SESSION : Building Hello for session 1
+ 
+SESSION : MY SESSION : 1 SERVER SESSION 1
+ 
+SESSION : SESSION connected to Port 8001
+ 

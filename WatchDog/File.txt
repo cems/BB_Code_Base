@@ -1,0 +1,4733 @@
+
+The current date/time is: Wed May 23 20:09:22 2012
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+wlan0     Link encap:Ethernet  HWaddr 00:1F:35:00:3B:A7  
+          inet addr:10.10.10.1  Bcast:10.10.10.255  Mask:255.255.255.0
+          inet6 addr: fe80::21f:35ff:fe00:3ba7/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:15 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:19 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1378 (1.3 KiB)  TX bytes:2206 (2.1 KiB)
+
+wlan0     IEEE 802.11bg  ESSID:"TING"  
+          Mode:Managed  Frequency:2.417 GHz  Access Point: 00:80:48:65:A3:D6   
+          Bit Rate=5.5 Mb/s   Tx-Power=20 dBm   
+          Retry  long limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=47/100  Signal level=47/100  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+[    0.000000] Linux version 2.6.32 (koen@dominion) (gcc version 4.3.3 (GCC) ) #3 PREEMPT Thu Sep 16 13:13:36 CEST 2010
+[    0.000000] CPU: ARMv7 Processor [411fc083] revision 3 (ARMv7), cr=10c53c7f
+[    0.000000] CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[    0.000000] Machine: OMAP3 Beagle Board
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 65536
+[    0.000000] free_area_init_node: node 0, pgdat c066b270, node_mem_map c06ce000
+[    0.000000]   Normal zone: 512 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 65024 pages, LIFO batch:15
+[    0.000000] OMAP3430/3530 ES3.1 (l2cache iva sgx neon isp 720m )
+[    0.000000] SRAM: Mapped pa 0x40200000 to va 0xfe400000 size: 0x100000
+[    0.000000] Reserving 14680064 bytes SDRAM for VRAM
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+[    0.000000] Kernel command line: console=none root=/dev/mmcblk0p2 rw rootfstype=ext3 omapfb.video_mode=1024x768MR-16@60 rootwait
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 128MB 128MB = 256MB total
+[    0.000000] Memory: 238336KB available (5896K code, 671K data, 204K init, 0K highmem)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:402
+[    0.000000] Clocking rate (Crystal/Core/MPU): 26.0/332/500 MHz
+[    0.000000] Reprogramming SDRC clock to 332000000 Hz
+[    0.000000] GPMC revision 5.0
+[    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 4.0) with 96 interrupts
+[    0.000000] Total of 96 interrupts on 1 active controller
+[    0.000000] OMAP GPIO hardware version 2.5
+[    0.000000] OMAP clockevent source: GPTIMER12 at 32768 Hz
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] Calibrating delay loop... 514.67 BogoMIPS (lpj=2011136)
+[    0.000000] Mount-cache hash table entries: 512
+[    0.000000] CPU: Testing write buffer coherency: ok
+[    0.000000] tmpfs: No value for mount option 'mode'
+[    0.000000] devtmpfs: initialized
+[    0.000000] regulator: core version 0.5
+[    0.000000] NET: Registered protocol family 16
+[    0.000000] Found NAND on CS0
+[    0.000000] Registering NAND on CS0
+[    0.000000] Unable to get DVI reset GPIO
+[41062.388793] OMAP DMA hardware revision 4.0
+[41062.397766] bio: create slab <bio-0> at 0
+[41062.399414] SCSI subsystem initialized
+[41062.401153] usbcore: registered new interface driver usbfs
+[41062.401336] usbcore: registered new interface driver hub
+[41062.401580] usbcore: registered new device driver usb
+[41062.402038] i2c_omap i2c_omap.1: bus 1 rev3.12 at 2600 kHz
+[41062.405151] twl4030: PIH (irq 7) chaining IRQs 368..375
+[41062.405181] twl4030: power (irq 373) chaining IRQs 376..383
+[41062.405609] twl4030: gpio (irq 368) chaining IRQs 384..401
+[41062.407318] regulator: VUSB1V5: 1500 mV normal standby
+[41062.407592] regulator: VUSB1V8: 1800 mV normal standby
+[41062.407897] regulator: VUSB3V1: 3100 mV normal standby
+[41062.409423] twl4030_usb twl4030_usb: Initialized TWL4030 USB module
+[41062.409942] regulator: VMMC1: 1850 <--> 3150 mV normal standby
+[41062.410278] regulator: VDAC: 1800 mV normal standby
+[41062.410583] regulator: VPLL2: 1800 mV normal standby
+[41062.410919] regulator: VSIM: 1800 <--> 3000 mV normal standby
+[41062.411376] regulator: VAUX3: 1800 mV normal standby
+[41062.411804] regulator: VAUX4: 1800 mV normal standby
+[41062.421569] i2c_omap i2c_omap.2: bus 2 rev3.12 at 400 kHz
+[41062.437652] i2c_omap i2c_omap.3: bus 3 rev3.12 at 100 kHz
+[41062.439178] Switching to clocksource 32k_counter
+[41062.451629] musb_hdrc: version 6.0, musb-dma, otg (peripheral+host), debug=0
+[41062.454284] musb_hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine (X), bulk split (X), HB-ISO Rx, HB-ISO Tx, SoftConn)
+[41062.454315] musb_hdrc: MHDRC RTL version 1.400 
+[41062.454315] musb_hdrc: setup fifo_mode 4
+[41062.454345] musb_hdrc: 28/31 max ep, 16384/16384 memory
+[41062.454406] musb_hdrc: USB OTG mode controller at fa0ab000 using DMA, IRQ 92
+[41062.454406] musb_hdrc musb_hdrc: MUSB HDRC host driver
+[41062.454559] musb_hdrc musb_hdrc: new USB bus registered, assigned bus number 1
+[41062.454742] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[41062.454742] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[41062.454772] usb usb1: Product: MUSB HDRC host driver
+[41062.454803] usb usb1: Manufacturer: Linux 2.6.32 musb-hcd
+[41062.454803] usb usb1: SerialNumber: musb_hdrc
+[41062.455688] hub 1-0:1.0: USB hub found
+[41062.455749] hub 1-0:1.0: 1 port detected
+[41062.457031] NET: Registered protocol family 2
+[41062.457275] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+[41062.457946] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[41062.458221] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+[41062.458343] TCP: Hash tables configured (established 8192 bind 8192)
+[41062.458374] TCP reno registered
+[41062.458374] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[41062.458435] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[41062.458740] NET: Registered protocol family 1
+[41062.459259] RPC: Registered udp transport module.
+[41062.459289] RPC: Registered tcp transport module.
+[41062.459289] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[41062.460418] omap-iommu omap-iommu.0: isp registered
+[41062.462524] VFS: Disk quotas dquot_6.5.2
+[41062.462646] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[41062.464111] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[41062.465179] JFFS2 version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[41062.466217] msgmni has been set to 466
+[41062.471679] alg: No test for stdrng (krng)
+[41062.472015] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+[41062.472045] io scheduler noop registered
+[41062.472076] io scheduler deadline registered
+[41062.472259] io scheduler cfq registered (default)
+[41062.533782] OMAP DSS rev 2.0
+[41062.533874] OMAP DISPC rev 3.0
+[41062.533935] OMAP VENC rev 2
+[41062.534240] OMAP DSI rev 1.0
+[41062.875671] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[41062.897857] serial8250.0: ttyS0 at MMIO 0x4806a000 (irq = 72) is a ST16654
+[41062.919097] serial8250.1: ttyS1 at MMIO 0x4806c000 (irq = 73) is a ST16654
+[41062.940338] serial8250.2: ttyS2 at MMIO 0x49020000 (irq = 74) is a ST16654
+[41062.949127] brd: module loaded
+[41062.953369] loop: module loaded
+[41062.954742] omap2-nand driver initializing
+[41062.955047] NAND device: Manufacturer ID: 0x2c, Chip ID: 0xba (Micron NAND 256MiB 1,8V 16-bit)
+[41062.955688] cmdlinepart partition parsing not available
+[41062.955718] Creating 5 MTD partitions on "omap2-nand":
+[41062.955749] 0x000000000000-0x000000080000 : "X-Loader"
+[41062.957214] 0x000000080000-0x000000260000 : "U-Boot"
+[41062.958923] 0x000000260000-0x000000280000 : "U-Boot Env"
+[41062.959869] 0x000000280000-0x000000680000 : "Kernel"
+[41062.962463] 0x000000680000-0x000010000000 : "File System"
+[41063.072570] usbcore: registered new interface driver catc
+[41063.072570] catc: v2.8:CATC EL1210A NetMate USB Ethernet driver
+[41063.072692] usbcore: registered new interface driver kaweth
+[41063.072723] pegasus: v0.6.14 (2006/09/27), Pegasus/Pegasus II USB Ethernet driver
+[41063.072845] usbcore: registered new interface driver pegasus
+[41063.072845] rtl8150: v0.6.2 (2004/08/27):rtl8150 based usb-ethernet driver
+[41063.072967] usbcore: registered new interface driver rtl8150
+[41063.073059] usbcore: registered new interface driver asix
+[41063.073181] usbcore: registered new interface driver cdc_ether
+[41063.073303] usbcore: registered new interface driver dm9601
+[41063.073455] usbcore: registered new interface driver smsc95xx
+[41063.073547] usbcore: registered new interface driver gl620a
+[41063.073669] usbcore: registered new interface driver net1080
+[41063.073791] usbcore: registered new interface driver plusb
+[41063.073883] usbcore: registered new interface driver rndis_host
+[41063.074035] usbcore: registered new interface driver cdc_subset
+[41063.074157] usbcore: registered new interface driver zaurus
+[41063.074249] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[41063.075073] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[41063.075378] ehci-omap ehci-omap.0: OMAP-EHCI Host Controller
+[41063.075744] ehci-omap ehci-omap.0: new USB bus registered, assigned bus number 2
+[41063.075958] ehci-omap ehci-omap.0: irq 77, io mem 0x48064800
+[41063.088043] ehci-omap ehci-omap.0: USB 2.0 started, EHCI 1.00
+[41063.088195] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[41063.088226] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[41063.088226] usb usb2: Product: OMAP-EHCI Host Controller
+[41063.088256] usb usb2: Manufacturer: Linux 2.6.32 ehci_hcd
+[41063.088287] usb usb2: SerialNumber: ehci-omap.0
+[41063.089141] hub 2-0:1.0: USB hub found
+[41063.089172] hub 2-0:1.0: 3 ports detected
+[41063.119415] Initializing USB Mass Storage driver...
+[41063.119628] usbcore: registered new interface driver usb-storage
+[41063.119659] USB Mass Storage support registered.
+[41063.120117] mice: PS/2 mouse device common for all mice
+[41063.120574] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[41063.121887] input: twl4030_pwrbutton as /devices/platform/i2c_omap.1/i2c-1/1-0049/twl4030_pwrbutton/input/input1
+[41063.122406] i2c /dev entries driver
+[41063.123199] Linux video capture interface: v2.00
+[41063.123535] omap-iommu omap-iommu.0: isp: version 1.1
+[41063.123657] Saving csi2 context
+[41063.123840] Restoring csi2 context
+[41063.123931] Saving csi2 context
+[41063.125183] vpfe_init
+[41063.125854] OMAP Watchdog Timer Rev 0x31: initial timeout 60 sec
+[41063.237213] mmci-omap-hs mmci-omap-hs.1: err -16 configuring card detect
+[41063.237579] Registered led device: beagleboard::usr0
+[41063.237762] Registered led device: beagleboard::usr1
+[41063.238922] Registered led device: beagleboard::pmu_stat
+[41063.241485] usbcore: registered new interface driver usbhid
+[41063.241516] usbhid: USB HID core driver
+[41063.241729] Advanced Linux Sound Architecture Driver Version 1.0.21.
+[41063.242370] usbcore: registered new interface driver snd-usb-audio
+[41063.313751] No device for DAI omap-mcbsp-dai-0
+[41063.313751] No device for DAI omap-mcbsp-dai-1
+[41063.313781] No device for DAI omap-mcbsp-dai-2
+[41063.313781] No device for DAI omap-mcbsp-dai-3
+[41063.313812] No device for DAI omap-mcbsp-dai-4
+[41063.313812] OMAP3 Beagle SoC init
+[41063.315673] asoc: twl4030 <-> omap-mcbsp-dai-0 mapping ok
+[41063.323486] ALSA device list:
+[41063.323516]   #0: omap3beagle (twl4030)
+[41063.323638] oprofile: using arm/armv7
+[41063.323944] TCP cubic registered
+[41063.323944] NET: Registered protocol family 17
+[41063.324005] NET: Registered protocol family 15
+[41063.324127] lib80211: common routines for IEEE802.11 drivers
+[41063.324157] lib80211_crypt: registered algorithm 'NULL'
+[41063.324188] ThumbEE CPU extension supported.
+[41063.324188] Power Management for TI OMAP3.
+[41063.324890] SmartReflex driver initialized
+[41063.333679] Disabling unused clock "sr2_fck"
+[41063.333709] Disabling unused clock "sr1_fck"
+[41063.333740] Disabling unused clock "mcbsp_fck"
+[41063.333770] Disabling unused clock "mcbsp_fck"
+[41063.333770] Disabling unused clock "mcbsp_fck"
+[41063.333801] Disabling unused clock "mcbsp_ick"
+[41063.333831] Disabling unused clock "mcbsp_ick"
+[41063.333831] Disabling unused clock "mcbsp_ick"
+[41063.333862] Disabling unused clock "gpt2_ick"
+[41063.333862] Disabling unused clock "gpt3_ick"
+[41063.333892] Disabling unused clock "gpt4_ick"
+[41063.333923] Disabling unused clock "gpt5_ick"
+[41063.333923] Disabling unused clock "gpt6_ick"
+[41063.333953] Disabling unused clock "gpt7_ick"
+[41063.333984] Disabling unused clock "gpt8_ick"
+[41063.333984] Disabling unused clock "gpt9_ick"
+[41063.334014] Disabling unused clock "wdt3_ick"
+[41063.334045] Disabling unused clock "wdt3_fck"
+[41063.334045] Disabling unused clock "gpio2_dbck"
+[41063.334075] Disabling unused clock "gpio3_dbck"
+[41063.334075] Disabling unused clock "gpio4_dbck"
+[41063.334106] Disabling unused clock "gpio5_dbck"
+[41063.334136] Disabling unused clock "gpio6_dbck"
+[41063.334136] Disabling unused clock "gpt9_fck"
+[41063.334167] Disabling unused clock "gpt8_fck"
+[41063.334197] Disabling unused clock "gpt7_fck"
+[41063.334197] Disabling unused clock "gpt6_fck"
+[41063.334228] Disabling unused clock "gpt5_fck"
+[41063.334228] Disabling unused clock "gpt4_fck"
+[41063.334259] Disabling unused clock "gpt3_fck"
+[41063.334289] Disabling unused clock "gpt2_fck"
+[41063.334289] Disabling unused clock "gpt1_ick"
+[41063.334320] Disabling unused clock "wdt1_ick"
+[41063.334350] Disabling unused clock "gpio1_dbck"
+[41063.334350] Disabling unused clock "gpt1_fck"
+[41063.334381] Disabling unused clock "cam_mclk"
+[41063.334442] Disabling unused clock "des1_ick"
+[41063.334472] Disabling unused clock "sha11_ick"
+[41063.334472] Disabling unused clock "rng_ick"
+[41063.334503] Disabling unused clock "aes1_ick"
+[41063.334503] Disabling unused clock "ssi_ick"
+[41063.334533] Disabling unused clock "mailboxes_ick"
+[41063.334564] Disabling unused clock "mcbsp_ick"
+[41063.334564] Disabling unused clock "mcbsp_ick"
+[41063.334594] Disabling unused clock "gpt10_ick"
+[41063.334625] Disabling unused clock "gpt11_ick"
+[41063.334625] Disabling unused clock "hdq_ick"
+[41063.334655] Disabling unused clock "mspro_ick"
+[41063.334686] Disabling unused clock "des2_ick"
+[41063.334686] Disabling unused clock "sha12_ick"
+[41063.334716] Disabling unused clock "aes2_ick"
+[41063.334747] Disabling unused clock "icr_ick"
+[41063.334747] Disabling unused clock "pka_ick"
+[41063.334777] Disabling unused clock "ssi_ssr_fck"
+[41063.334777] Disabling unused clock "hdq_fck"
+[41063.334808] Disabling unused clock "mcbsp_fck"
+[41063.334838] Disabling unused clock "mcbsp_fck"
+[41063.334838] Disabling unused clock "mspro_fck"
+[41063.334869] Disabling unused clock "gpt11_fck"
+[41063.334899] Disabling unused clock "gpt10_fck"
+[41063.334899] Disabling unused clock "sad2d_ick"
+[41063.334960] Disabling unused clock "dpll4_m6x2_ck"
+[41063.334960] Disabling unused clock "dpll3_m3x2_ck"
+[41063.334991] Disabling unused clock "sys_clkout1"
+[41063.335418] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 1
+[41063.336334] registered taskstats version 1
+[41063.355255] Console: switching to colour frame buffer device 80x30
+[41063.371826] regulator_init_complete: incomplete constraints, leaving VAUX3 on
+[41063.372070] regulator_init_complete: incomplete constraints, leaving VDAC on
+[41063.372619] omap_vout omap_vout: probed for an unknown device
+[41063.373138] Waiting for root device /dev/mmcblk0p2...
+[41063.424102] usb 2-2: new high speed USB device using ehci-omap and address 2
+[41063.533782] mmc0: new high speed SDHC card at address e624
+[41063.534332] mmcblk0: mmc0:e624 SD16G 14.8 GiB 
+[41063.534790]  mmcblk0: p1 p2
+[41063.581787] usb 2-2: New USB device found, idVendor=0ace, idProduct=1215
+[41063.581817] usb 2-2: New USB device strings: Mfr=16, Product=32, SerialNumber=0
+[41063.581817] usb 2-2: Product: USB2.0 WLAN
+[41063.581848] usb 2-2: Manufacturer: ZyDAS
+[41063.601959] EXT3-fs (mmcblk0p2): warning: maximal mount count reached, running e2fsck is recommended
+[41063.602172] kjournald starting.  Commit interval 5 seconds
+[41063.662445] EXT3-fs (mmcblk0p2): using internal journal
+[41063.662506] EXT3-fs (mmcblk0p2): mounted filesystem with writeback data mode
+[41063.662597] VFS: Mounted root (ext3 filesystem) on device 179:2.
+[41063.669616] devtmpfs: mounted
+[41063.669738] Freeing init memory: 204K
+[41063.669799] Warning: unable to open an initial console.
+[41064.627777] udev: starting version 151
+[41070.875274] cfg80211: Using static regulatory domain info
+[41070.875305] cfg80211: Regulatory domain: 00
+[41070.875335]     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[41070.875366]     (2402000 KHz - 2472000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[41070.875366]     (2457000 KHz - 2482000 KHz @ 20000 KHz), (600 mBi, 2000 mBm)
+[41070.875396]     (2474000 KHz - 2494000 KHz @ 20000 KHz), (600 mBi, 2000 mBm)
+[41070.875427]     (5170000 KHz - 5250000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[41070.875427]     (5735000 KHz - 5835000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[41070.875518] cfg80211: Calling CRDA to update world regulatory domain
+[41071.517883] usb 2-2: reset high speed USB device using ehci-omap and address 2
+[41071.854064] Bluetooth: Core ver 2.15
+[41071.862731] NET: Registered protocol family 31
+[41071.862762] Bluetooth: HCI device and connection manager initialized
+[41071.862762] Bluetooth: HCI socket layer initialized
+[41072.002532] Bluetooth: L2CAP ver 2.14
+[41072.002563] Bluetooth: L2CAP socket layer initialized
+[41072.099273] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[41072.716918] NET: Registered protocol family 10
+[41073.028228] irda_init()
+[41073.028381] NET: Registered protocol family 23
+[41073.105895] IrCOMM protocol (Dag Brattli)
+[41073.309631] phy0: Selected rate control algorithm 'pid'
+[41073.311035] zd1211rw 2-2:1.0: phy0
+[41073.312561] usbcore: registered new interface driver zd1211rw
+[41073.575744] Bluetooth: RFCOMM TTY layer initialized
+[41073.575805] Bluetooth: RFCOMM socket layer initialized
+[41073.575805] Bluetooth: RFCOMM ver 1.11
+[41081.700073] CMEMK module: built on Mar 18 2010 at 13:19:12
+[41081.700103]   Reference Linux version 2.6.32
+[41081.700134]   File /OE/angstrom-dev/work/beagleboard-angstrom-linux-gnueabi/ti-linuxutils-1_2_25_01_06-r67c/linuxutils_2_25_01_06/packages/ti/sdo/linuxutils/cmem/src/module/cmemk.c
+[41081.708557] CMEM Range Overlaps Kernel Physical - allowing overlap
+[41081.708587] CMEM phys_start (0x86300000) overlaps kernel (0x80000000 -> 0x90000000)
+[41081.708648] CMEMK Error: Failed to request_mem_region(0x86300000, 16777216)
+[41081.830474] DSPLINK Module (1.64) created on Date: Mar 18 2010 Time: 13:22:42
+[41081.961151] usb 2-2: firmware: requesting zd1211/zd1211b_ub
+[41081.992736] usb 2-2: firmware: requesting zd1211/zd1211b_uphr
+[41082.052978] SDMAK module: built on Mar 18 2010 at 13:19:31
+[41082.053253]   Reference Linux version 2.6.32
+[41082.053283]   File /OE/angstrom-dev/work/beagleboard-angstrom-linux-gnueabi/ti-linuxutils-1_2_25_01_06-r67c/linuxutils_2_25_01_06/packages/ti/sdo/linuxutils/sdma/src/module/sdmak.c
+[41082.261932] zd1211rw 2-2:1.0: firmware version 4725
+[41082.310577] zd1211rw 2-2:1.0: zd1211b chip 0ace:1215 v4810 high 00-1f-35 AL2230_RF pa0 g--NS
+[41082.313781] cfg80211: Calling CRDA for country: DE
+[41082.362457] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[41083.480987] PVRSRV_PIXEL_FORMAT_ARGB8888
+[41084.364349] g_cdc gadget: using random self ethernet address
+[41084.364410] g_cdc gadget: usi
+The current date/time is: Wed May 23 20:23:07 2012
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+wlan0     IEEE 802.11bg  ESSID:"TING"  
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=0 dBm   
+          Retry  long limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          
+[    0.000000] Linux version 2.6.32 (koen@dominion) (gcc version 4.3.3 (GCC) ) #3 PREEMPT Thu Sep 16 13:13:36 CEST 2010
+[    0.000000] CPU: ARMv7 Processor [411fc083] revision 3 (ARMv7), cr=10c53c7f
+[    0.000000] CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[    0.000000] Machine: OMAP3 Beagle Board
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 65536
+[    0.000000] free_area_init_node: node 0, pgdat c066b270, node_mem_map c06ce000
+[    0.000000]   Normal zone: 512 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 65024 pages, LIFO batch:15
+[    0.000000] OMAP3430/3530 ES3.1 (l2cache iva sgx neon isp 720m )
+[    0.000000] SRAM: Mapped pa 0x40200000 to va 0xfe400000 size: 0x100000
+[    0.000000] Reserving 14680064 bytes SDRAM for VRAM
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+[    0.000000] Kernel command line: console=none root=/dev/mmcblk0p2 rw rootfstype=ext3 omapfb.video_mode=1024x768MR-16@60 rootwait
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 128MB 128MB = 256MB total
+[    0.000000] Memory: 238336KB available (5896K code, 671K data, 204K init, 0K highmem)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:402
+[    0.000000] Clocking rate (Crystal/Core/MPU): 26.0/332/500 MHz
+[    0.000000] Reprogramming SDRC clock to 332000000 Hz
+[    0.000000] GPMC revision 5.0
+[    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 4.0) with 96 interrupts
+[    0.000000] Total of 96 interrupts on 1 active controller
+[    0.000000] OMAP GPIO hardware version 2.5
+[    0.000000] OMAP clockevent source: GPTIMER12 at 32768 Hz
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] Calibrating delay loop... 514.67 BogoMIPS (lpj=2011136)
+[    0.000000] Mount-cache hash table entries: 512
+[    0.000000] CPU: Testing write buffer coherency: ok
+[    0.000000] tmpfs: No value for mount option 'mode'
+[    0.000000] devtmpfs: initialized
+[    0.000000] regulator: core version 0.5
+[    0.000000] NET: Registered protocol family 16
+[    0.000000] Found NAND on CS0
+[    0.000000] Registering NAND on CS0
+[    0.000000] Unable to get DVI reset GPIO
+[41942.881530] OMAP DMA hardware revision 4.0
+[41942.890502] bio: create slab <bio-0> at 0
+[41942.892120] SCSI subsystem initialized
+[41942.893890] usbcore: registered new interface driver usbfs
+[41942.894073] usbcore: registered new interface driver hub
+[41942.894317] usbcore: registered new device driver usb
+[41942.894744] i2c_omap i2c_omap.1: bus 1 rev3.12 at 2600 kHz
+[41942.897888] twl4030: PIH (irq 7) chaining IRQs 368..375
+[41942.897918] twl4030: power (irq 373) chaining IRQs 376..383
+[41942.898345] twl4030: gpio (irq 368) chaining IRQs 384..401
+[41942.900024] regulator: VUSB1V5: 1500 mV normal standby
+[41942.900329] regulator: VUSB1V8: 1800 mV normal standby
+[41942.900634] regulator: VUSB3V1: 3100 mV normal standby
+[41942.902130] twl4030_usb twl4030_usb: Initialized TWL4030 USB module
+[41942.902679] regulator: VMMC1: 1850 <--> 3150 mV normal standby
+[41942.903015] regulator: VDAC: 1800 mV normal standby
+[41942.903320] regulator: VPLL2: 1800 mV normal standby
+[41942.903656] regulator: VSIM: 1800 <--> 3000 mV normal standby
+[41942.904113] regulator: VAUX3: 1800 mV normal standby
+[41942.904541] regulator: VAUX4: 1800 mV normal standby
+[41942.914306] i2c_omap i2c_omap.2: bus 2 rev3.12 at 400 kHz
+[41942.914581] i2c_omap i2c_omap.3: bus 3 rev3.12 at 100 kHz
+[41942.916107] Switching to clocksource 32k_counter
+[41942.928527] musb_hdrc: version 6.0, musb-dma, otg (peripheral+host), debug=0
+[41942.931182] musb_hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine (X), bulk split (X), HB-ISO Rx, HB-ISO Tx, SoftConn)
+[41942.931213] musb_hdrc: MHDRC RTL version 1.400 
+[41942.931243] musb_hdrc: setup fifo_mode 4
+[41942.931243] musb_hdrc: 28/31 max ep, 16384/16384 memory
+[41942.931304] musb_hdrc: USB OTG mode controller at fa0ab000 using DMA, IRQ 92
+[41942.931335] musb_hdrc musb_hdrc: MUSB HDRC host driver
+[41942.931488] musb_hdrc musb_hdrc: new USB bus registered, assigned bus number 1
+[41942.931640] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[41942.931671] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[41942.931671] usb usb1: Product: MUSB HDRC host driver
+[41942.931701] usb usb1: Manufacturer: Linux 2.6.32 musb-hcd
+[41942.931701] usb usb1: SerialNumber: musb_hdrc
+[41942.932586] hub 1-0:1.0: USB hub found
+[41942.932647] hub 1-0:1.0: 1 port detected
+[41942.933959] NET: Registered protocol family 2
+[41942.934204] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+[41942.934875] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[41942.935119] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+[41942.935272] TCP: Hash tables configured (established 8192 bind 8192)
+[41942.935272] TCP reno registered
+[41942.935302] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[41942.935333] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[41942.935638] NET: Registered protocol family 1
+[41942.936187] RPC: Registered udp transport module.
+[41942.936187] RPC: Registered tcp transport module.
+[41942.936218] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[41942.937347] omap-iommu omap-iommu.0: isp registered
+[41942.939483] VFS: Disk quotas dquot_6.5.2
+[41942.939636] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[41942.941101] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[41942.942108] JFFS2 version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[41942.943145] msgmni has been set to 466
+[41942.948608] alg: No test for stdrng (krng)
+[41942.948944] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+[41942.948974] io scheduler noop registered
+[41942.948974] io scheduler deadline registered
+[41942.949188] io scheduler cfq registered (default)
+[41943.010711] OMAP DSS rev 2.0
+[41943.010772] OMAP DISPC rev 3.0
+[41943.010864] OMAP VENC rev 2
+[41943.011169] OMAP DSI rev 1.0
+[41943.352569] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[41943.374755] serial8250.0: ttyS0 at MMIO 0x4806a000 (irq = 72) is a ST16654
+[41943.395996] serial8250.1: ttyS1 at MMIO 0x4806c000 (irq = 73) is a ST16654
+[41943.417236] serial8250.2: ttyS2 at MMIO 0x49020000 (irq = 74) is a ST16654
+[41943.426025] brd: module loaded
+[41943.430267] loop: module loaded
+[41943.431640] omap2-nand driver initializing
+[41943.431945] NAND device: Manufacturer ID: 0x2c, Chip ID: 0xba (Micron NAND 256MiB 1,8V 16-bit)
+[41943.432586] cmdlinepart partition parsing not available
+[41943.432617] Creating 5 MTD partitions on "omap2-nand":
+[41943.432647] 0x000000000000-0x000000080000 : "X-Loader"
+[41943.434112] 0x000000080000-0x000000260000 : "U-Boot"
+[41943.435821] 0x000000260000-0x000000280000 : "U-Boot Env"
+[41943.436767] 0x000000280000-0x000000680000 : "Kernel"
+[41943.439361] 0x000000680000-0x000010000000 : "File System"
+[41943.549438] usbcore: registered new interface driver catc
+[41943.549468] catc: v2.8:CATC EL1210A NetMate USB Ethernet driver
+[41943.549560] usbcore: registered new interface driver kaweth
+[41943.549591] pegasus: v0.6.14 (2006/09/27), Pegasus/Pegasus II USB Ethernet driver
+[41943.549713] usbcore: registered new interface driver pegasus
+[41943.549743] rtl8150: v0.6.2 (2004/08/27):rtl8150 based usb-ethernet driver
+[41943.549835] usbcore: registered new interface driver rtl8150
+[41943.549957] usbcore: registered new interface driver asix
+[41943.550079] usbcore: registered new interface driver cdc_ether
+[41943.550170] usbcore: registered new interface driver dm9601
+[41943.550323] usbcore: registered new interface driver smsc95xx
+[41943.550445] usbcore: registered new interface driver gl620a
+[41943.550537] usbcore: registered new interface driver net1080
+[41943.550659] usbcore: registered new interface driver plusb
+[41943.550781] usbcore: registered new interface driver rndis_host
+[41943.550903] usbcore: registered new interface driver cdc_subset
+[41943.551025] usbcore: registered new interface driver zaurus
+[41943.551147] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[41943.551971] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[41943.552337] ehci-omap ehci-omap.0: OMAP-EHCI Host Controller
+[41943.552734] ehci-omap ehci-omap.0: new USB bus registered, assigned bus number 2
+[41943.552917] ehci-omap ehci-omap.0: irq 77, io mem 0x48064800
+[41943.564971] ehci-omap ehci-omap.0: USB 2.0 started, EHCI 1.00
+[41943.565124] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[41943.565155] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[41943.565185] usb usb2: Product: OMAP-EHCI Host Controller
+[41943.565185] usb usb2: Manufacturer: Linux 2.6.32 ehci_hcd
+[41943.565216] usb usb2: SerialNumber: ehci-omap.0
+[41943.566070] hub 2-0:1.0: USB hub found
+[41943.566131] hub 2-0:1.0: 3 ports detected
+[41943.596343] Initializing USB Mass Storage driver...
+[41943.596557] usbcore: registered new interface driver usb-storage
+[41943.596588] USB Mass Storage support registered.
+[41943.597045] mice: PS/2 mouse device common for all mice
+[41943.597503] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[41943.598815] input: twl4030_pwrbutton as /devices/platform/i2c_omap.1/i2c-1/1-0049/twl4030_pwrbutton/input/input1
+[41943.599334] i2c /dev entries driver
+[41943.600128] Linux video capture interface: v2.00
+[41943.600463] omap-iommu omap-iommu.0: isp: version 1.1
+[41943.600555] Saving csi2 context
+[41943.600769] Restoring csi2 context
+[41943.600860] Saving csi2 context
+[41943.602111] vpfe_init
+[41943.602783] OMAP Watchdog Timer Rev 0x31: initial timeout 60 sec
+[41943.713684] mmci-omap-hs mmci-omap-hs.1: err -16 configuring card detect
+[41943.714050] Registered led device: beagleboard::usr0
+[41943.714202] Registered led device: beagleboard::usr1
+[41943.715393] Registered led device: beagleboard::pmu_stat
+[41943.717956] usbcore: registered new interface driver usbhid
+[41943.717987] usbhid: USB HID core driver
+[41943.718200] Advanced Linux Sound Architecture Driver Version 1.0.21.
+[41943.718841] usbcore: registered new interface driver snd-usb-audio
+[41943.792388] No device for DAI omap-mcbsp-dai-0
+[41943.792388] No device for DAI omap-mcbsp-dai-1
+[41943.792419] No device for DAI omap-mcbsp-dai-2
+[41943.792419] No device for DAI omap-mcbsp-dai-3
+[41943.792449] No device for DAI omap-mcbsp-dai-4
+[41943.792449] OMAP3 Beagle SoC init
+[41943.794250] asoc: twl4030 <-> omap-mcbsp-dai-0 mapping ok
+[41943.802032] ALSA device list:
+[41943.802062]   #0: omap3beagle (twl4030)
+[41943.802185] oprofile: using arm/armv7
+[41943.802459] TCP cubic registered
+[41943.802490] NET: Registered protocol family 17
+[41943.802551] NET: Registered protocol family 15
+[41943.802673] lib80211: common routines for IEEE802.11 drivers
+[41943.802703] lib80211_crypt: registered algorithm 'NULL'
+[41943.802703] ThumbEE CPU extension supported.
+[41943.802734] Power Management for TI OMAP3.
+[41943.803405] SmartReflex driver initialized
+[41943.812286] Disabling unused clock "sr2_fck"
+[41943.812316] Disabling unused clock "sr1_fck"
+[41943.812316] Disabling unused clock "mcbsp_fck"
+[41943.812347] Disabling unused clock "mcbsp_fck"
+[41943.812377] Disabling unused clock "mcbsp_fck"
+[41943.812408] Disabling unused clock "mcbsp_ick"
+[41943.812408] Disabling unused clock "mcbsp_ick"
+[41943.812438] Disabling unused clock "mcbsp_ick"
+[41943.812438] Disabling unused clock "gpt2_ick"
+[41943.812469] Disabling unused clock "gpt3_ick"
+[41943.812500] Disabling unused clock "gpt4_ick"
+[41943.812500] Disabling unused clock "gpt5_ick"
+[41943.812530] Disabling unused clock "gpt6_ick"
+[41943.812561] Disabling unused clock "gpt7_ick"
+[41943.812561] Disabling unused clock "gpt8_ick"
+[41943.812591] Disabling unused clock "gpt9_ick"
+[41943.812591] Disabling unused clock "wdt3_ick"
+[41943.812622] Disabling unused clock "wdt3_fck"
+[41943.812652] Disabling unused clock "gpio2_dbck"
+[41943.812652] Disabling unused clock "gpio3_dbck"
+[41943.812683] Disabling unused clock "gpio4_dbck"
+[41943.812713] Disabling unused clock "gpio5_dbck"
+[41943.812713] Disabling unused clock "gpio6_dbck"
+[41943.812744] Disabling unused clock "gpt9_fck"
+[41943.812774] Disabling unused clock "gpt8_fck"
+[41943.812774] Disabling unused clock "gpt7_fck"
+[41943.812805] Disabling unused clock "gpt6_fck"
+[41943.812805] Disabling unused clock "gpt5_fck"
+[41943.812835] Disabling unused clock "gpt4_fck"
+[41943.812866] Disabling unused clock "gpt3_fck"
+[41943.812866] Disabling unused clock "gpt2_fck"
+[41943.812896] Disabling unused clock "gpt1_ick"
+[41943.812927] Disabling unused clock "wdt1_ick"
+[41943.812927] Disabling unused clock "gpio1_dbck"
+[41943.812957] Disabling unused clock "gpt1_fck"
+[41943.812988] Disabling unused clock "cam_mclk"
+[41943.813049] Disabling unused clock "des1_ick"
+[41943.813049] Disabling unused clock "sha11_ick"
+[41943.813079] Disabling unused clock "rng_ick"
+[41943.813079] Disabling unused clock "aes1_ick"
+[41943.813110] Disabling unused clock "ssi_ick"
+[41943.813140] Disabling unused clock "mailboxes_ick"
+[41943.813140] Disabling unused clock "mcbsp_ick"
+[41943.813171] Disabling unused clock "mcbsp_ick"
+[41943.813171] Disabling unused clock "gpt10_ick"
+[41943.813201] Disabling unused clock "gpt11_ick"
+[41943.813232] Disabling unused clock "hdq_ick"
+[41943.813262] Disabling unused clock "mspro_ick"
+[41943.813262] Disabling unused clock "des2_ick"
+[41943.813293] Disabling unused clock "sha12_ick"
+[41943.813293] Disabling unused clock "aes2_ick"
+[41943.813323] Disabling unused clock "icr_ick"
+[41943.813354] Disabling unused clock "pka_ick"
+[41943.813354] Disabling unused clock "ssi_ssr_fck"
+[41943.813385] Disabling unused clock "hdq_fck"
+[41943.813415] Disabling unused clock "mcbsp_fck"
+[41943.813415] Disabling unused clock "mcbsp_fck"
+[41943.813446] Disabling unused clock "mspro_fck"
+[41943.813476] Disabling unused clock "gpt11_fck"
+[41943.813476] Disabling unused clock "gpt10_fck"
+[41943.813507] Disabling unused clock "sad2d_ick"
+[41943.813537] Disabling unused clock "dpll4_m6x2_ck"
+[41943.813568] Disabling unused clock "dpll3_m3x2_ck"
+[41943.813598] Disabling unused clock "sys_clkout1"
+[41943.814025] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 1
+[41943.814910] registered taskstats version 1
+[41943.833862] Console: switching to colour frame buffer device 80x30
+[41943.850677] regulator_init_complete: incomplete constraints, leaving VAUX3 on
+[41943.850921] regulator_init_complete: incomplete constraints, leaving VDAC on
+[41943.851470] omap_vout omap_vout: probed for an unknown device
+[41943.851989] Waiting for root device /dev/mmcblk0p2...
+[41943.901672] usb 2-2: new high speed USB device using ehci-omap and address 2
+[41943.981506] mmc0: new high speed SDHC card at address e624
+[41943.982086] mmcblk0: mmc0:e624 SD16G 14.8 GiB 
+[41943.982513]  mmcblk0: p1 p2
+[41944.058746] usb 2-2: New USB device found, idVendor=0ace, idProduct=1215
+[41944.058776] usb 2-2: New USB device strings: Mfr=16, Product=32, SerialNumber=0
+[41944.058776] usb 2-2: Product: USB2.0 WLAN
+[41944.058807] usb 2-2: Manufacturer: ZyDAS
+[41944.078582] EXT3-fs (mmcblk0p2): warning: maximal mount count reached, running e2fsck is recommended
+[41944.078796] kjournald starting.  Commit interval 5 seconds
+[41944.138488] EXT3-fs (mmcblk0p2): using internal journal
+[41944.138519] EXT3-fs (mmcblk0p2): mounted filesystem with writeback data mode
+[41944.138610] VFS: Mounted root (ext3 filesystem) on device 179:2.
+[41944.145660] devtmpfs: mounted
+[41944.145782] Freeing init memory: 204K
+[41944.145843] Warning: unable to open an initial console.
+[41945.120452] udev: starting version 151
+[41951.387451] cfg80211: Using static regulatory domain info
+[41951.387481] cfg80211: Regulatory domain: 00
+[41951.387512]     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[41951.387542]     (2402000 KHz - 2472000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[41951.387542]     (2457000 KHz - 2482000 KHz @ 20000 KHz), (600 mBi, 2000 mBm)
+[41951.387573]     (2474000 KHz - 2494000 KHz @ 20000 KHz), (600 mBi, 2000 mBm)
+[41951.387603]     (5170000 KHz - 5250000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[41951.387634]     (5735000 KHz - 5835000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[41951.387695] cfg80211: Calling CRDA to update world regulatory domain
+[41951.972839] Bluetooth: Core ver 2.15
+[41951.974639] NET: Registered protocol family 31
+[41951.974670] Bluetooth: HCI device and connection manager initialized
+[41951.974700] Bluetooth: HCI socket layer initialized
+[41952.174560] usb 2-2: reset high speed USB device using ehci-omap and address 2
+[41952.184906] Bluetooth: L2CAP ver 2.14
+[41952.184936] Bluetooth: L2CAP socket layer initialized
+[41952.315338] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[41953.050445] NET: Registered protocol family 10
+[41953.285583] irda_init()
+[41953.285705] NET: Registered protocol family 23
+[41953.428253] IrCOMM protocol (Dag Brattli)
+[41953.832763] Bluetooth: RFCOMM TTY layer initialized
+[41953.832794] Bluetooth: RFCOMM socket layer initialized
+[41953.832824] Bluetooth: RFCOMM ver 1.11
+[41953.906402] phy0: Selected rate control algorithm 'pid'
+[41953.907897] zd1211rw 2-2:1.0: phy0
+[41953.909576] usbcore: registered new interface driver zd1211rw
+[41962.135650] CMEMK module: built on Mar 18 2010 at 13:19:12
+[41962.135681]   Reference Linux version 2.6.32
+[41962.135681]   File /OE/angstrom-dev/work/beagleboard-angstrom-linux-gnueabi/ti-linuxutils-1_2_25_01_06-r67c/linuxutils_2_25_01_06/packages/ti/sdo/linuxutils/cmem/src/module/cmemk.c
+[41962.142395] CMEM Range Overlaps Kernel Physical - allowing overlap
+[41962.142425] CMEM phys_start (0x86300000) overlaps kernel (0x80000000 -> 0x90000000)
+[41962.142486] CMEMK Error: Failed to request_mem_region(0x86300000, 16777216)
+[41962.276733] DSPLINK Module (1.64) created on Date: Mar 18 2010 Time: 13:22:42
+[41962.414520] usb 2-2: firmware: requesting zd1211/zd1211b_ub
+[41962.446228] usb 2-2: firmware: requesting zd1211/zd1211b_uphr
+[41962.508331] SDMAK module: built on Mar 18 2010 at 13:19:31
+[41962.509552]   Reference Linux version 2.6.32
+[41962.509582]   File /OE/angstrom-dev/work/beagleboard-angstrom-linux-gnueabi/ti-linuxutils-1_2_25_01_06-r67c/linuxutils_2_25_01_06/packages/ti/sdo/linuxutils/sdma/src/module/sdmak.c
+[41962.708557] zd1211rw 2-2:1.0: firmware version 4725
+[41962.754577] zd1211rw 2-2:1.0: zd1211b chip 0ace:1215 v4810 high 00-1f-35 AL2230_RF pa0 g--NS
+[41962.757751] cfg80211: Calling CRDA for country: DE
+[41962.765441] ehci-omap ehci-omap.0: force halt; handshake fa064814 00004000 00000000 -> -110
+[41963.463745] PVRSRV_PIXEL_FORMAT_ARGB8888
+[41964.791229] g_cdc gadget: using random self ethernet address
+[41964.791259] g_cdc gadget: using random host ethernet address
+[41964.803405] usb0: MAC fe:30:8a:f2:e6:06
+[41964.803436] usb0: HOST MAC 4e:aa:54:7e:ab:45
+[41964.807006] g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+[41964.807037] g_cdc gadget: g_cdc ready
+Module                  Size  Used by
+g_cdc                  25332  0 
+bufferclass_ti          3389  0 
+omaplfb                 8749  0 
+pvrsrvkm              124731  2 bufferclass_ti,omaplfb
+sdmak                   3743  0 
+lpm_omap3530            6597  0 
+dsplinkk              125541  1 lpm_omap3530
+rfcomm                 33488  0 
+ircomm_tty             30629  0 
+ircomm                 16429  1 ircomm_tty
+irda                  163469  2 ircomm_tty,ircomm
+ipv6                  249183  8 
+hidp                   11193  0 
+l2cap                  30104  4 rfcomm,hidp
+zd1211rw               44369  0 
+bluetooth              49221  3 rfcomm,hidp,l2cap
+mac80211              127583  1 zd1211rw
+cfg80211              115344  2 zd1211rw,mac80211
+rfkill                 15030  2 bluetooth,cfg80211
+
+Not reachable, resetting USB module
+
+Not reachable, resetting USB module
+
+Not reachable, resetting USB module
+
+USB reset did not resolve connectivity, rebooting
+
+The current date/time is: Wed May 23 20:24:42 2012
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+[41965.298461] usbcore: deregistering interface driver zd1211rw
+[41965.565704] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565734] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565765] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565765] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565795] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565826] hub 2-0:1.0: Cannot enable port 2.  Maybe the USB cable is bad?
+[41965.565826] hub 2-0:1.0: cannot disable port 2 (err = -108)
+[41965.565856] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565887] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565917] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565948] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565948] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.565979] hub 2-0:1.0: Cannot enable port 2.  Maybe the USB cable is bad?
+[41965.566009] hub 2-0:1.0: cannot disable port 2 (err = -108)
+[41965.566040] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566040] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566070] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566101] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566101] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566131] hub 2-0:1.0: Cannot enable port 2.  Maybe the USB cable is bad?
+[41965.566162] hub 2-0:1.0: cannot disable port 2 (err = -108)
+[41965.566192] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566192] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566223] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566253] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566284] hub 2-0:1.0: cannot reset port 2 (err = -108)
+[41965.566284] hub 2-0:1.0: Cannot enable port 2.  Maybe the USB cable is bad?
+[41965.566314] hub 2-0:1.0: cannot disable port 2 (err = -108)
+[41965.566345] hub 2-0:1.0: cannot disable port 2 (err = -108)
+[41965.567077] hub 2-0:1.0: hub_port_status failed (err = -108)
+Module                  Size  Used by
+g_cdc                  25332  0 
+bufferclass_ti          3389  0 
+omaplfb                 8749  0 
+pvrsrvkm              124731  2 bufferclass_ti,omaplfb
+sdmak                   3743  0 
+lpm_omap3530            6597  0 
+dsplinkk              125541  1 lpm_omap3530
+rfcomm                 33488  0 
+ircomm_tty             30629  0 
+ircomm                 16429  1 ircomm_tty
+irda                  163469  2 ircomm_tty,ircomm
+ipv6                  249183  8 
+hidp                   11193  0 
+l2cap                  30104  4 rfcomm,hidp
+bluetooth              49221  3 rfcomm,hidp,l2cap
+rfkill                 15030  1 bluetooth
+
+The current date/time is: Wed May 23 20:26:24 2012
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+wlan0     Link encap:Ethernet  HWaddr 00:1F:35:00:3B:A7  
+          inet addr:10.10.10.1  Bcast:10.10.10.255  Mask:255.255.255.0
+          inet6 addr: fe80::21f:35ff:fe00:3ba7/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:15 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:21 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1378 (1.3 KiB)  TX bytes:2984 (2.9 KiB)
+
+wlan0     IEEE 802.11bg  ESSID:"TING"  
+          Mode:Managed  Frequency:2.417 GHz  Access Point: 00:80:48:65:A3:D6   
+          Bit Rate=6 Mb/s   Tx-Power=20 dBm   
+          Retry  long limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=50/100  Signal level=50/100  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+[    0.000000] Linux version 2.6.32 (koen@dominion) (gcc version 4.3.3 (GCC) ) #3 PREEMPT Thu Sep 16 13:13:36 CEST 2010
+[    0.000000] CPU: ARMv7 Processor [411fc083] revision 3 (ARMv7), cr=10c53c7f
+[    0.000000] CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[    0.000000] Machine: OMAP3 Beagle Board
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] On node 0 totalpages: 65536
+[    0.000000] free_area_init_node: node 0, pgdat c066b270, node_mem_map c06ce000
+[    0.000000]   Normal zone: 512 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 65024 pages, LIFO batch:15
+[    0.000000] OMAP3430/3530 ES3.1 (l2cache iva sgx neon isp 720m )
+[    0.000000] SRAM: Mapped pa 0x40200000 to va 0xfe400000 size: 0x100000
+[    0.000000] Reserving 14680064 bytes SDRAM for VRAM
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+[    0.000000] Kernel command line: console=none root=/dev/mmcblk0p2 rw rootfstype=ext3 omapfb.video_mode=1024x768MR-16@60 rootwait
+[    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Memory: 128MB 128MB = 256MB total
+[    0.000000] Memory: 238336KB available (5896K code, 671K data, 204K init, 0K highmem)
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:402
+[    0.000000] Clocking rate (Crystal/Core/MPU): 26.0/332/500 MHz
+[    0.000000] Reprogramming SDRC clock to 332000000 Hz
+[    0.000000] GPMC revision 5.0
+[    0.000000] IRQ: Found an INTC at 0xfa200000 (revision 4.0) with 96 interrupts
+[    0.000000] Total of 96 interrupts on 1 active controller
+[    0.000000] OMAP GPIO hardware version 2.5
+[    0.000000] OMAP clockevent source: GPTIMER12 at 32768 Hz
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] Calibrating delay loop... 514.67 BogoMIPS (lpj=2011136)
+[    0.000000] Mount-cache hash table entries: 512
+[    0.000000] CPU: Testing write buffer coherency: ok
+[    0.000000] tmpfs: No value for mount option 'mode'
+[    0.000000] devtmpfs: initialized
+[    0.000000] regulator: core version 0.5
+[    0.000000] NET: Registered protocol family 16
+[    0.000000] Found NAND on CS0
+[    0.000000] Registering NAND on CS0
+[    0.000000] Unable to get DVI reset GPIO
+[42083.834655] OMAP DMA hardware revision 4.0
+[42083.843597] bio: create slab <bio-0> at 0
+[42083.845184] SCSI subsystem initialized
+[42083.846954] usbcore: registered new interface driver usbfs
+[42083.847137] usbcore: registered new interface driver hub
+[42083.847381] usbcore: registered new device driver usb
+[42083.859375] i2c_omap i2c_omap.1: bus 1 rev3.12 at 2600 kHz
+[42083.862457] twl4030: PIH (irq 7) chaining IRQs 368..375
+[42083.862518] twl4030: power (irq 373) chaining IRQs 376..383
+[42083.862884] twl4030: gpio (irq 368) chaining IRQs 384..401
+[42083.864593] regulator: VUSB1V5: 1500 mV normal standby
+[42083.864868] regulator: VUSB1V8: 1800 mV normal standby
+[42083.865173] regulator: VUSB3V1: 3100 mV normal standby
+[42083.866699] twl4030_usb twl4030_usb: Initialized TWL4030 USB module
+[42083.867218] regulator: VMMC1: 1850 <--> 3150 mV normal standby
+[42083.867645] regulator: VDAC: 1800 mV normal standby
+[42083.867950] regulator: VPLL2: 1800 mV normal standby
+[42083.868286] regulator: VSIM: 1800 <--> 3000 mV normal standby
+[42083.868743] regulator: VAUX3: 1800 mV normal standby
+[42083.869140] regulator: VAUX4: 1800 mV normal standby
+[42083.883544] i2c_omap i2c_omap.2: bus 2 rev3.12 at 400 kHz
+[42083.899627] i2c_omap i2c_omap.3: bus 3 rev3.12 at 100 kHz
+[42083.901153] Switching to clocksource 32k_counter
+[42083.913543] musb_hdrc: version 6.0, musb-dma, otg (peripheral+host), debug=0
+[42083.916198] musb_hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine (X), bulk split (X), HB-ISO Rx, HB-ISO Tx, SoftConn)
+[42083.916229] musb_hdrc: MHDRC RTL version 1.400 
+[42083.916259] musb_hdrc: setup fifo_mode 4
+[42083.916290] musb_hdrc: 28/31 max ep, 16384/16384 memory
+[42083.916320] musb_hdrc: USB OTG mode controller at fa0ab000 using DMA, IRQ 92
+[42083.916351] musb_hdrc musb_hdrc: MUSB HDRC host driver
+[42083.916503] musb_hdrc musb_hdrc: new USB bus registered, assigned bus number 1
+[42083.916656] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[42083.916687] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[42083.916717] usb usb1: Product: MUSB HDRC host driver
+[42083.916717] usb usb1: Manufacturer: Linux 2.6.32 musb-hcd
+[42083.916748] usb usb1: SerialNumber: musb_hdrc
+[42083.917633] hub 1-0:1.0: USB hub found
+[42083.917694] hub 1-0:1.0: 1 port detected
+[42083.918975] NET: Registered protocol family 2
+[42083.919250] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+[42083.919921] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[42083.920166] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+[42083.920318] TCP: Hash tables configured (established 8192 bind 8192)
+[42083.920318] TCP reno registered
+[42083.920349] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[42083.920379] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[42083.920684] NET: Registered protocol family 1
+[42083.921234] RPC: Registered udp transport module.
+[42083.921234] RPC: Registered tcp transport module.
+[42083.921264] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[42083.922393] omap-iommu omap-iommu.0: isp registered
+[42083.924530] VFS: Disk quotas dquot_6.5.2
+[42083.924682] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[42083.926116] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[42083.927154] JFFS2 version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[42083.928192] msgmni has been set to 466
+[42083.933654] alg: No test for stdrng (krng)
+[42083.934020] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+[42083.934051] io scheduler noop registered
+[42083.934051] io scheduler deadline registered
+[42083.934265] io scheduler cfq registered (default)
+[42083.995788] OMAP DSS rev 2.0
+[42083.995849] OMAP DISPC rev 3.0
+[42083.995910] OMAP VENC rev 2
+[42083.996215] OMAP DSI rev 1.0
+[42084.337646] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[42084.359832] serial8250.0: ttyS0 at MMIO 0x4806a000 (irq = 72) is a ST16654
+[42084.381103] serial8250.1: ttyS1 at MMIO 0x4806c000 (irq = 73) is a ST16654
+[42084.402313] serial8250.2: ttyS2 at MMIO 0x49020000 (irq = 74) is a ST16654
+[42084.411132] brd: module loaded
+[42084.415374] loop: module loaded
+[42084.416748] omap2-nand driver initializing
+[42084.417053] NAND device: Manufacturer ID: 0x2c, Chip ID: 0xba (Micron NAND 256MiB 1,8V 16-bit)
+[42084.417694] cmdlinepart partition parsing not available
+[42084.417724] Creating 5 MTD partitions on "omap2-nand":
+[42084.417724] 0x000000000000-0x000000080000 : "X-Loader"
+[42084.419219] 0x000000080000-0x000000260000 : "U-Boot"
+[42084.420928] 0x000000260000-0x000000280000 : "U-Boot Env"
+[42084.421844] 0x000000280000-0x000000680000 : "Kernel"
+[42084.424468] 0x000000680000-0x000010000000 : "File System"
+[42084.534515] usbcore: registered new interface driver catc
+[42084.534545] catc: v2.8:CATC EL1210A NetMate USB Ethernet driver
+[42084.534667] usbcore: registered new interface driver kaweth
+[42084.534698] pegasus: v0.6.14 (2006/09/27), Pegasus/Pegasus II USB Ethernet driver
+[42084.534790] usbcore: registered new interface driver pegasus
+[42084.534820] rtl8150: v0.6.2 (2004/08/27):rtl8150 based usb-ethernet driver
+[42084.534942] usbcore: registered new interface driver rtl8150
+[42084.535034] usbcore: registered new interface driver asix
+[42084.535156] usbcore: registered new interface driver cdc_ether
+[42084.535278] usbcore: registered new interface driver dm9601
+[42084.535430] usbcore: registered new interface driver smsc95xx
+[42084.535522] usbcore: registered new interface driver gl620a
+[42084.535644] usbcore: registered new interface driver net1080
+[42084.535766] usbcore: registered new interface driver plusb
+[42084.535858] usbcore: registered new interface driver rndis_host
+[42084.536010] usbcore: registered new interface driver cdc_subset
+[42084.536132] usbcore: registered new interface driver zaurus
+[42084.536224] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[42084.537048] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[42084.537353] ehci-omap ehci-omap.0: OMAP-EHCI Host Controller
+[42084.537750] ehci-omap ehci-omap.0: new USB bus registered, assigned bus number 2
+[42084.537933] ehci-omap ehci-omap.0: irq 77, io mem 0x48064800
+[42084.550018] ehci-omap ehci-omap.0: USB 2.0 started, EHCI 1.00
+[42084.550201] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[42084.550201] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[42084.550231] usb usb2: Product: OMAP-EHCI Host Controller
+[42084.550262] usb usb2: Manufacturer: Linux 2.6.32 ehci_hcd
+[42084.550262] usb usb2: SerialNumber: ehci-omap.0
+[42084.551147] hub 2-0:1.0: USB hub found
+[42084.551177] hub 2-0:1.0: 3 ports detected
+[42084.581390] Initializing USB Mass Storage driver...
+[42084.581634] usbcore: registered new interface driver usb-storage
+[42084.581634] USB Mass Storage support registered.
+[42084.582122] mice: PS/2 mouse device common for all mice
+[42084.582580] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[42084.583862] input: twl4030_pwrbutton as /devices/platform/i2c_omap.1/i2c-1/1-0049/twl4030_pwrbutton/input/input1
+[42084.584411] i2c /dev entries driver
+[42084.585205] Linux video capture interface: v2.00
+[42084.585540] omap-iommu omap-iommu.0: isp: version 1.1
+[42084.585662] Saving csi2 context
+[42084.585845] Restoring csi2 context
+[42084.585937] Saving csi2 context
+[42084.587219] vpfe_init
+[42084.587890] OMAP Watchdog Timer Rev 0x31: initial timeout 60 sec
+[42084.699676] mmci-omap-hs mmci-omap-hs.1: err -16 configuring card detect
+[42084.700042] Registered led device: beagleboard::usr0
+[42084.700195] Registered led device: beagleboard::usr1
+[42084.701354] Registered led device: beagleboard::pmu_stat
+[42084.703918] usbcore: registered new interface driver usbhid
+[42084.703918] usbhid: USB HID core driver
+[42084.704162] Advanced Linux Sound Architecture Driver Version 1.0.21.
+[42084.704772] usbcore: registered new interface driver snd-usb-audio
+[42084.784851] No device for DAI omap-mcbsp-dai-0
+[42084.784851] No device for DAI omap-mcbsp-dai-1
+[42084.784881] No device for DAI omap-mcbsp-dai-2
+[42084.784881] No device for DAI omap-mcbsp-dai-3
+[42084.784912] No device for DAI omap-mcbsp-dai-4
+[42084.784912] OMAP3 Beagle SoC init
+[42084.786712] asoc: twl4030 <-> omap-mcbsp-dai-0 mapping ok
+[42084.794494] ALSA device list:
+[42084.794525]   #0: omap3beagle (twl4030)
+[42084.794647] oprofile: using arm/armv7
+[42084.794952] TCP cubic registered
+[42084.794952] NET: Registered protocol family 17
+[42084.795013] NET: Registered protocol family 15
+[42084.795135] lib80211: common routines for IEEE802.11 drivers
+[42084.795166] lib80211_crypt: registered algorithm 'NULL'
+[42084.795196] ThumbEE CPU extension supported.
+[42084.795196] Power Management for TI OMAP3.
+[42084.795898] SmartReflex driver initialized
+[42084.804748] Disabling unused clock "sr2_fck"
+[42084.804779] Disabling unused clock "sr1_fck"
+[42084.804779] Disabling unused clock "mcbsp_fck"
+[42084.804809] Disabling unused clock "mcbsp_fck"
+[42084.804840] Disabling unused clock "mcbsp_fck"
+[42084.804870] Disabling unused clock "mcbsp_ick"
+[42084.804870] Disabling unused clock "mcbsp_ick"
+[42084.804901] Disabling unused clock "mcbsp_ick"
+[42084.804901] Disabling unused clock "gpt2_ick"
+[42084.804931] Disabling unused clock "gpt3_ick"
+[42084.804962] Disabling unused clock "gpt4_ick"
+[42084.804962] Disabling unused clock "gpt5_ick"
+[42084.804992] Disabling unused clock "gpt6_ick"
+[42084.805023] Disabling unused clock "gpt7_ick"
+[42084.805023] Disabling unused clock "gpt8_ick"
+[42084.805053] Disabling unused clock "gpt9_ick"
+[42084.805084] Disabling unused clock "wdt3_ick"
+[42084.805084] Disabling unused clock "wdt3_fck"
+[42084.805114] Disabling unused clock "gpio2_dbck"
+[42084.805114] Disabling unused clock "gpio3_dbck"
+[42084.805145] Disabling unused clock "gpio4_dbck"
+[42084.805175] Disabling unused clock "gpio5_dbck"
+[42084.805175] Disabling unused clock "gpio6_dbck"
+[42084.805206] Disabling unused clock "gpt9_fck"
+[42084.805236] Disabling unused clock "gpt8_fck"
+[42084.805236] Disabling unused clock "gpt7_fck"
+[42084.805267] Disabling unused clock "gpt6_fck"
+[42084.805297] Disabling unused clock "gpt5_fck"
+[42084.805297] Disabling unused clock "gpt4_fck"
+[42084.805328] Disabling unused clock "gpt3_fck"
+[42084.805328] Disabling unused clock "gpt2_fck"
+[42084.805358] Disabling unused clock "gpt1_ick"
+[42084.805389] Disabling unused clock "wdt1_ick"
+[42084.805389] Disabling unused clock "gpio1_dbck"
+[42084.805419] Disabling unused clock "gpt1_fck"
+[42084.805450] Disabling unused clock "cam_mclk"
+[42084.805511] Disabling unused clock "des1_ick"
+[42084.805511] Disabling unused clock "sha11_ick"
+[42084.805541] Disabling unused clock "rng_ick"
+[42084.805541] Disabling unused clock "aes1_ick"
+[42084.805572] Disabling unused clock "ssi_ick"
+[42084.805603] Disabling unused clock "mailboxes_ick"
+[42084.805603] Disabling unused clock "mcbsp_ick"
+[42084.805633] Disabling unused clock "mcbsp_ick"
+[42084.805664] Disabling unused clock "gpt10_ick"
+[42084.805664] Disabling unused clock "gpt11_ick"
+[42084.805694] Disabling unused clock "hdq_ick"
+[42084.805725] Disabling unused clock "mspro_ick"
+[42084.805725] Disabling unused clock "des2_ick"
+[42084.805755] Disabling unused clock "sha12_ick"
+[42084.805786] Disabling unused clock "aes2_ick"
+[42084.805786] Disabling unused clock "icr_ick"
+[42084.805816] Disabling unused clock "pka_ick"
+[42084.805816] Disabling unused clock "ssi_ssr_fck"
+[42084.805847] Disabling unused clock "hdq_fck"
+[42084.805877] Disabling unused clock "mcbsp_fck"
+[42084.805877] Disabling unused clock "mcbsp_fck"
+[42084.805908] Disabling unused clock "mspro_fck"
+[42084.805938] Disabling unused clock "gpt11_fck"
+[42084.805938] Disabling unused clock "gpt10_fck"
+[42084.805969] Disabling unused clock "sad2d_ick"
+[42084.805999] Disabling unused clock "dpll4_m6x2_ck"
+[42084.806030] Disabling unused clock "dpll3_m3x2_ck"
+[42084.806060] Disabling unused clock "sys_clkout1"
+[42084.806488] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 1
+[42084.807373] registered taskstats version 1
+[42084.826385] Console: switching to colour frame buffer device 80x30
+[42084.843109] regulator_init_complete: incomplete constraints, leaving VAUX3 on
+[42084.843353] regulator_init_complete: incomplete constraints, leaving VDAC on
+[42084.843902] omap_vout omap_vout: probed for an unknown device
+[42084.844421] Waiting for root device /dev/mmcblk0p2...
+[42084.878570] usb 2-2: new high speed USB device using ehci-omap and address 2
+[42084.980163] mmc0: new high speed SDHC card at address e624
+[42084.980743] mmcblk0: mmc0:e624 SD16G 14.8 GiB 
+[42084.981170]  mmcblk0: p1 p2
+[42085.036254] usb 2-2: New USB device found, idVendor=0ace, idProduct=1215
+[42085.036285] usb 2-2: New USB device strings: Mfr=16, Product=32, SerialNumber=0
+[42085.036315] usb 2-2: Product: USB2.0 WLAN
+[42085.036346] usb 2-2: Manufacturer: ZyDAS
+[42085.067016] EXT3-fs (mmcblk0p2): warning: maximal mount count reached, running e2fsck is recommended
+[42085.067230] kjournald starting.  Commit interval 5 seconds
+[42085.127319] EXT3-fs (mmcblk0p2): using internal journal
+[42085.127349] EXT3-fs (mmcblk0p2): mounted filesystem with writeback data mode
+[42085.127441] VFS: Mounted root (ext3 filesystem) on device 179:2.
+[42085.133117] devtmpfs: mounted
+[42085.133209] Freeing init memory: 204K
+[42085.133300] Warning: unable to open an initial console.
+[42086.105499] udev: starting version 151
+[42092.290100] cfg80211: Using static regulatory domain info
+[42092.290130] cfg80211: Regulatory domain: 00
+[42092.290161]     (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[42092.290161]     (2402000 KHz - 2472000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[42092.290191]     (2457000 KHz - 2482000 KHz @ 20000 KHz), (600 mBi, 2000 mBm)
+[42092.290222]     (2474000 KHz - 2494000 KHz @ 20000 KHz), (600 mBi, 2000 mBm)
+[42092.290252]     (5170000 KHz - 5250000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[42092.290252]     (5735000 KHz - 5835000 KHz @ 40000 KHz), (600 mBi, 2000 mBm)
+[42092.290344] cfg80211: Calling CRDA to update world regulatory domain
+[42093.722076] usb 2-2: reset high speed USB device using ehci-omap and address 2
+[42093.778564] Bluetooth: Core ver 2.15
+[42093.781402] NET: Registered protocol family 31
+[42093.781433] Bluetooth: HCI device and connection manager initialized
+[42093.781463] Bluetooth: HCI socket layer initialized
+[42093.823852] Bluetooth: L2CAP ver 2.14
+[42093.823883] Bluetooth: L2CAP socket layer initialized
+[42093.873352] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[42094.473175] NET: Registered protocol family 10
+[42094.730133] irda_init()
+[42094.730255] NET: Registered protocol family 23
+[42094.803436] IrCOMM protocol (Dag Brattli)
+[42095.411346] Bluetooth: RFCOMM TTY layer initialized
+[42095.411376] Bluetooth: RFCOMM socket layer initialized
+[42095.411407] Bluetooth: RFCOMM ver 1.11
+[42095.449218] phy0: Selected rate control algorithm 'pid'
+[42095.450714] zd1211rw 2-2:1.0: phy0
+[42095.452331] usbcore: registered new interface driver zd1211rw
+[42103.431091] CMEMK module: built on Mar 18 2010 at 13:19:12
+[42103.431121]   Reference Linux version 2.6.32
+[42103.431152]   File /OE/angstrom-dev/work/beagleboard-angstrom-linux-gnueabi/ti-linuxutils-1_2_25_01_06-r67c/linuxutils_2_25_01_06/packages/ti/sdo/linuxutils/cmem/src/module/cmemk.c
+[42103.439758] CMEM Range Overlaps Kernel Physical - allowing overlap
+[42103.439788] CMEM phys_start (0x86300000) overlaps kernel (0x80000000 -> 0x90000000)
+[42103.439819] CMEMK Error: Failed to request_mem_region(0x86300000, 16777216)
+[42103.572143] DSPLINK Module (1.64) created on Date: Mar 18 2010 Time: 13:22:42
+[42103.682708] usb 2-2: firmware: requesting zd1211/zd1211b_ub
+[42103.723846] usb 2-2: firmware: requesting zd1211/zd1211b_uphr
+[42103.798461] SDMAK module: built on Mar 18 2010 at 13:19:31
+[42103.799652]   Reference Linux version 2.6.32
+[42103.799682]   File /OE/angstrom-dev/work/beagleboard-angstrom-linux-gnueabi/ti-linuxutils-1_2_25_01_06-r67c/linuxutils_2_25_01_06/packages/ti/sdo/linuxutils/sdma/src/module/sdmak.c
+[42103.987426] zd1211rw 2-2:1.0: firmware version 4725
+[42104.032592] zd1211rw 2-2:1.0: zd1211b chip 0ace:1215 v4810 high 00-1f-35 AL2230_RF pa0 g--NS
+[42104.036437] cfg80211: Calling CRDA for country: DE
+[42104.094665] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[42104.761291] PVRSRV_PIXEL_FORMAT_ARGB8888
+[42105.640319] g_cdc gadget: using random self ethernet address
+[42105.640350] g_cdc gadget: using random host ethernet address
+[42105.651916] usb0: MAC ba:63:24:7b:57:f5
+[42105.651947] usb0: HOST MAC fe:52:34:fe:59:fa
+[42105.655517] g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+[42105.655548] g_cdc gadget: g_cdc ready
+[42107.134674] wlan0: direct probe to AP 00:80:48:65:a3:d6 (try 1)
+[42107.141265] wlan0: direct probe responded
+[42107.141296] wlan0: authenticate with AP 00:80:48:65:a3:d6 (try 1)
+[42107.142944] wlan0: authenticated
+[42107.143096] wlan0: associate with AP 00:80:48:65:a3:d6 (try 1)
+[42107.145812] wlan0: RX AssocResp from 00:80:48:65:a3:d6 (capab=0x421 status=0 aid=1)
+[42107.145843] wlan0: associated
+[42107.147186] ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Module                  Size  Used by
+g_cdc                  25332  0 
+bufferclass_ti          3389  0 
+omaplfb                 8749  0 
+pvrsrvkm              124731  2 bufferclass_ti,omaplfb
+sdmak                   3743  0 
+lpm_omap3530            6597  0 
+dsplinkk              125541  1 lpm_omap3530
+rfcomm                 33488  0 
+ircomm_tty             30629  0 
+ircomm                 16429  1 ircomm_tty
+irda                  163469  2 ircomm_tty,ircomm
+ipv6                  249183  8 
+hidp                   11193  0 
+l2cap                  30104  4 rfcomm,hidp
+bluetooth              49221  3 rfcomm,hidp,l2cap
+zd1211rw               44369  0 
+mac80211              127583  1 zd1211rw
+cfg80211              115344  2 zd1211rw,mac80211
+rfkill                 15030  2 bluetooth,cfg80211
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .... Sleeping 30 secs
+
+Everthing OK .

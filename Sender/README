@@ -1,0 +1,7 @@
+Usage : ./sender <hostname> <remote-ipaddress>
+
+hostname - Host name for the beagleboard. 
+
+remote-ipaddress - Receiver's (JORGEN) IP.
+
+Example: ./sender host01 10.20.1.1

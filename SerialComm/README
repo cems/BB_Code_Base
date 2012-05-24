@@ -1,0 +1,8 @@
+make
+./serial -p ttyS2
+
+The serial data is printed to the console and also stored in 2 files:
+	FILE.txt in the same folder
+	A file per day in a folder labelled host01
+
+The default baud rate is 115200 and the serial port is set from CLI.
