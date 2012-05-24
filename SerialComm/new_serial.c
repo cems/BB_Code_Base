@@ -393,7 +393,7 @@ set_ABLE_clock() {
 				fprintf( stderr, "write to serial port failed: %s\n", strerror( errno ));
 			}
 
-			while(1) {
+			while(!done) {
 				/*Read until we receive a '^' */
 				if (read(gPortFd, &ch, 1) < 0) {
 					fprintf(debug,"Read from serial port failed %s\n", strerror(errno));
@@ -438,7 +438,7 @@ set_ABLE_clock() {
 								break;
 						}
 
-			//			tracker += 1;
+						tracker += 1;
 						if (write(gPortFd, &data, 1) != 1) {
 							fprintf(debug,"Write to serial port to get \"?\" failed\n");
 							fprintf( stderr, "write to serial port failed: %s\n", strerror( errno ));
@@ -450,13 +450,6 @@ set_ABLE_clock() {
 							fprintf( stderr, "Serial port read failed: %s\n", strerror( errno ));
 						    return(0);
 						}
-						printf("Received ACK : %c", ack);
-						if (read(gPortFd, &ack, 1) < 0) {
-							fprintf(debug,"Read from serial port failed %s\n", strerror(errno));
-							fprintf( stderr, "Serial port read failed: %s\n", strerror( errno ));
-						    return(0);
-						}
-						printf("%c\n", ack);
 
 						/* Send ACK */
 						
