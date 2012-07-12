@@ -21,7 +21,7 @@
 /* ---- Public Variables ------------------------------------------------- */
 
 FILE *fp,*fp1;	//File pointers for the 2 files
-FILE *debug;
+FILE *debug;  // Debugging file - Serial_Logs.txt
 int         opt;
 char        devName[ 40 ];	//port name is stored here
 const char *baudStr = NULL;	//Baud rate is stored here
@@ -290,11 +290,11 @@ int main(int argc, char **argv ) {
     it_val.it_interval = it_val.it_value;
     if (setitimer(ITIMER_REAL, &it_val, NULL) == -1) {
         perror("error calling setitimer()");
+	fprintf(debug,"Cannot initialize timer\n");
         exit(1);
     }
 
     while(1) {
-//        printf("Calling Pause\n");
         pause();	//Pause puts CPU in IDLE.
     }
 }
@@ -335,9 +335,14 @@ void onTimer(){
   time_t t = time(NULL);	//Get current system time
   struct tm tm = *localtime(&t);	//convert to struct
 
-  if (alreadyUploading)
-    return;
 
+  fprintf(debug,"Called On Timer\n");
+
+
+  if (alreadyUploading==1){
+    fprintf(debug,"It looks like we're already uploading\n");
+    return;
+  }
   alreadyUploading = 1;   // set it to 1 to prevent future re-entry if current upload is ongoing
 
 
@@ -354,8 +359,10 @@ void onTimer(){
 	
   if (upload_data()==0) {	//Get the data from ABLE
     printf("Upload failed \n");
+    fprintf(debug,"Upload failed\n");
   } else {
-    //        printf("Upload Sucess \n");
+    //     printf("Upload Sucess \n");
+    fprintf(debug,"Upload Successful\n");
   }
 
 	
@@ -366,11 +373,14 @@ void onTimer(){
   alreadyUploading = 0;   // done uploading, so we release it
 
   //	system("echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");//Put CPU in powersave mode
+  fprintf(debug,"Done Uploading\n");
+
 }
 
 set_ABLE_clock() {
 
-  printf("Setting ABLE clock\n");
+  //  printf("Setting ABLE clock\n");
+  fprintf(debug,"Setting ABLE clock\n");
   char init = 'Q';
   char ch = NULL;
     
@@ -491,7 +501,8 @@ set_ABLE_clock() {
 		fprintf( stderr, "Serial port read failed: %s\n", strerror( errno ));
 		return(0);
 	      }
-	      printf("Clock setting Done\n");
+	      fprintf(debug,"Clock Setting Done\n");
+	      //	      printf("Clock setting Done\n");
 	      done = 1;
 	      break;
 	    }
