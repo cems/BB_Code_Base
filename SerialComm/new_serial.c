@@ -517,7 +517,7 @@ set_ABLE_clock() {
 
 int upload_data() {// returns zero on failure, one otherwise 
 
-  char chw = 'Q';		//Character to send to ABLE
+  char chw = 'Q';		//Character to send to ABLE 
   char ch = NULL;		//Store received character in this variable
   int x = 0;		//counter for a 'for' loop
   char temp_buffer[1000];	//Buffer to store temporary data as it is received for CRC computation
@@ -552,7 +552,7 @@ int upload_data() {// returns zero on failure, one otherwise
   tcflush(gPortFd, TCIFLUSH);
 
   if (clock_interval > CLOCK_INTERVAL) {
-    set_ABLE_clock();
+    //    set_ABLE_clock();
   }
     
   // Send 'Q' Initially
